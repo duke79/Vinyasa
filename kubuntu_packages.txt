@@ -1,0 +1,6 @@
+apt-get install git
+add-apt-repository ppa:nathan-renniewaldock/flux
+apt-get install git
+sudo apt-get install python-pip
+
+git clone "https://github.com/xflux-gui/fluxgui.git"
