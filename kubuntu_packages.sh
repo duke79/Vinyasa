@@ -16,6 +16,7 @@ sudo apt-get install git
 sudo apt-get install kdiff3
 git config --global user.email "pulkitsingh01@gmail.com"
 git config --global user.name "Pulkit Singh"
+#git config --global --remove-section credential #To remove osxkeychain
 
 #.Net | For windows applications
 sudo apt-get install mono-complete
@@ -34,7 +35,9 @@ chmod u+x,g+x GitExtensions/GitExtensions.sh
 alias gitex='$PWD/GitExtensions/GitExtensions.sh'
 #gitex
 
-
+#GitKraken
+sudo snap install gitkraken
+sudo snap connect gitkraken:removable-media
 
 #Python
 sudo apt-get install python-pip
@@ -46,3 +49,19 @@ sudo snap install pycharm-community --classic
 sudo add-apt-repository ppa:nathan-renniewaldock/flux
 git clone "https://github.com/xflux-gui/fluxgui.git"
 sudo apt-get install python-appindicator python-xdg python-pexpect python-gconf python-gtk2 python-glade2 libxxf86vm1
+
+#MySQL
+sudo apt-get install mysql-server #https://support.rackspace.com/how-to/installing-mysql-server-on-ubuntu/
+systemctl start mysql #start mysql service
+systemctl enable mysql #Launch at reboot
+#sudo mysql -u root -p #To launch mysql command line
+
+#MySQL | Config
+update user set authentication_string=PASSWORD("pass_pass") where User="root";
+GRANT ALL PRIVILEGES ON *.* TO 'vilokanlabs'@'localhost' IDENTIFIED BY 'Dynamic.123';
+FLUSH PRIVILEGES;
+exit;
+CREATE DATABASE alligator;
+
+#MySQLclient
+sudo apt-get install emma
