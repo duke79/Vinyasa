@@ -68,7 +68,7 @@ sudo apt-get install emma
 
 #VSCode
 # Download from : https://code.visualstudio.com/download
-# sudo apt install ./Downloads/code_*.deb
+sudo apt install ./Downloads/code_*.deb
 
 #Stremio
 # Download from: https://www.stremio.com/downloads
@@ -76,3 +76,7 @@ cd Downloads
 wget http://mirrors.kernel.org/ubuntu/pool/multiverse/f/fdk-aac/libfdk-aac1_0.1.6-1_amd64.deb
 sudo apt install ./libfdk-aac1_*_amd64.deb
 sudo apt install ./stremio*amd64.deb
+
+#Cerebro
+# Download from: https://github.com/KELiON/cerebro/releases
+sudo apt install ./cerebro_*.deb
