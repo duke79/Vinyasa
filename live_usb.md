@@ -55,3 +55,5 @@ Now unmount your persistence partition. Reminder: Your persistence partition may
 We’re done!
 
 ----
+
+[Backup USB](https://www.cyberciti.biz/faq/linux-copy-clone-usb-stick-including-partitions/) ??
