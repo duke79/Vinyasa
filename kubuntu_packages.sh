@@ -67,5 +67,5 @@ CREATE DATABASE alligator;
 sudo apt-get install emma
 
 #VSCode
-sudo apt install snapd
-sudo snap install --classic code
+# Download from : https://code.visualstudio.com/download
+# sudo apt install ./Downloads/code_*.deb
