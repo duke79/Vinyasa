@@ -65,3 +65,7 @@ CREATE DATABASE alligator;
 
 #MySQLclient
 sudo apt-get install emma
+
+#VSCode
+sudo apt install snapd
+sudo snap install --classic code
