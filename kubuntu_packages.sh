@@ -76,7 +76,8 @@ cd Downloads
 wget http://mirrors.kernel.org/ubuntu/pool/multiverse/f/fdk-aac/libfdk-aac1_0.1.6-1_amd64.deb
 sudo apt install ./libfdk-aac1_*_amd64.deb
 sudo apt install ./stremio*amd64.deb
+wget https://github.com/Stremio/stremio-bugs/issues/243#issuecomment-754149141
+sudo apt install libx264*_amd64.deb
 
-#Cerebro
-# Download from: https://github.com/KELiON/cerebro/releases
-sudo apt install ./cerebro_*.deb
+#Albert
+sudo apt install albert
