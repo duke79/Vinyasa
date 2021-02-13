@@ -57,6 +57,6 @@ We’re done!
 
 * [Packages to install](kali_packages.sh)
 * Backup USB
-  * [Linux (not tested yet!](https://www.cyberciti.biz/faq/linux-copy-clone-usb-stick-including-partitions/)
+  * [Linux (not tested yet!)](https://www.cyberciti.biz/faq/linux-copy-clone-usb-stick-including-partitions/)
   * [Windows](https://www.intowindows.com/how-to-backup-bootable-usb-drive)
     * [Download](https://www.alexpage.de/usb-image-tool/download/)
