@@ -1,13 +1,12 @@
 [Guide](https://devanswers.co/guide-kali-linux-2018-live-usb-persistence-windows)
  * Use `Rufus` instead, otherwise there were issues on PC (worked on a laptop though)
  * The persistent partition is already handled by rufus, there's a slider to choose the size
- * Only the mounting needs done
+ * Next do the mounting!
 
-Copy paste -
+<details>
 
-----
+<summary>Mount Persistence Partition</summary
 
-6. Mount Persistence Partition
 Once Kali has booted, we will use fdisk to view the disk devices and partitions.
 
 Open a new terminal window and run:
@@ -54,6 +53,8 @@ Now unmount your persistence partition. Reminder: Your persistence partition may
 ```sudo umount /dev/sdb2```
 We’re done!
 
-----
+</details>
 
-[Backup USB](https://www.cyberciti.biz/faq/linux-copy-clone-usb-stick-including-partitions/) ??
+* [Packages to install](kali_packages.sh)
+* [Backup USB](https://www.cyberciti.biz/faq/linux-copy-clone-usb-stick-including-partitions/)
+* [usb-image-tool](https://www.intowindows.com/how-to-backup-bootable-usb-drive)
