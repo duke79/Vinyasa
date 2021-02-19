@@ -60,3 +60,12 @@ We’re done!
   * [Linux (not tested yet!)](https://www.cyberciti.biz/faq/linux-copy-clone-usb-stick-including-partitions/)
   * [Windows](https://www.intowindows.com/how-to-backup-bootable-usb-drive)
     * [Download](https://www.alexpage.de/usb-image-tool/download/)
+* Perfo test
+  ```
+  [/] sudo dd if=/dev/zero of=/usr/lib/live/mount/persistence/sdc1/perfo_test bs=8k count=100000
+    100000+0 records in
+    100000+0 records out
+    819200000 bytes (819 MB, 781 MiB) copied, 3.22437 s, 254 MB/s
+
+  [/] sudo rm perfo_test
+  ```
