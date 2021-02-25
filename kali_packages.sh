@@ -19,6 +19,10 @@ sudo apt install albert
 sudo apt-get install python3-pip
 
 # sqlelectron
-## https://github.com/sqlectron/sqlectron-gui/releases/tag/v1.35.0
-wget https://github.com/sqlectron/sqlectron-gui/releases/download/v1.35.0/sqlectron_1.35.0_amd64.deb
-sudo apt install sqlelectron*_amd64.deb
+## https://github.com/sqlectron/sqlectron-gui/releases
+## 1.30.0 gave no errors, 1.35.0 & 1.34.0 threw this error -
+##    The following packages have unmet dependencies:
+##    sqlectron : Depends: libappindicator3-1 but it is not installable
+##    E: Unable to correct problems, you have held broken packages.                                              
+wget https://github.com/sqlectron/sqlectron-gui/releases/download/v1.30.0/Sqlectron_1.30.0_amd64.deb
+sudo apt install ./sqlectron_*_amd64.deb
