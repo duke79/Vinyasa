@@ -8,6 +8,8 @@ phy0    wlan0           ath9k           Qualcomm Atheros AR9485 Wireless Network
 ```
 sudo apt-get install software-properties-common
 sudo  add-apt-repository restricted
+sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) restricted"
+sudo apt-get update
 sudo apt-get --reinstall install bcmwl-kernel-source
 
 
