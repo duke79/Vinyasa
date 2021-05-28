@@ -6,6 +6,10 @@ sudo airmon-ng
 PHY     Interface       Driver          Chipset
 phy0    wlan0           ath9k           Qualcomm Atheros AR9485 Wireless Network Adapter (rev 01)
 ```
+sudo apt-get install software-properties-common
+sudo  add-apt-repository restricted
+sudo apt-get --reinstall install bcmwl-kernel-source
+
 
 #VSCode
 # Download from : https://code.visualstudio.com/download
