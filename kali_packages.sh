@@ -12,7 +12,8 @@ phy0    wlan0           ath9k           Qualcomm Atheros AR9485 Wireless Network
 # sudo apt-get update
 # sudo apt-get --reinstall install bcmwl-kernel-source
 sudo apt-get install broadcom-sta-dkms
-
+modprobe -r b44 b43 b43legacy ssb brcmsmac bcma
+modprobe wl
 
 #VSCode
 # Download from : https://code.visualstudio.com/download
