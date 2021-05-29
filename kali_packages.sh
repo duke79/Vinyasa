@@ -1,3 +1,10 @@
+## Wifi driver
+# sudo lshw -C network # check driver
+# sudo airmon-ng # check driver
+sudo apt-get install broadcom-sta-dkms
+sudo modprobe -r b44 b43 b43legacy ssb brcmsmac bcma
+sudo modprobe wl
+
 #VSCode
 # Download from : https://code.visualstudio.com/download
 sudo apt install ./Downloads/code_*.deb
