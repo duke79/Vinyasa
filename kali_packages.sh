@@ -1,19 +1,9 @@
 ## Wifi driver
-# check driver
-sudo lshw -C network
-sudo airmon-ng
-```text
-PHY     Interface       Driver          Chipset
-phy0    wlan0           ath9k           Qualcomm Atheros AR9485 Wireless Network Adapter (rev 01)
-```
-# sudo apt-get install software-properties-common
-# sudo  add-apt-repository restricted
-# sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) restricted"
-# sudo apt-get update
-# sudo apt-get --reinstall install bcmwl-kernel-source
+# sudo lshw -C network # check driver
+# sudo airmon-ng # check driver
 sudo apt-get install broadcom-sta-dkms
-modprobe -r b44 b43 b43legacy ssb brcmsmac bcma
-modprobe wl
+sudo modprobe -r b44 b43 b43legacy ssb brcmsmac bcma
+sudo modprobe wl
 
 #VSCode
 # Download from : https://code.visualstudio.com/download
