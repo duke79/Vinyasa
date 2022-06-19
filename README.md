@@ -15,8 +15,17 @@ Development environment configurator
 docker run -d -v /Users/pulkitsingh/dev/auth-dummy:/bitnami/postgresql -e POSTGRESQL_PASSWORD=admin -p 5432:5432 bitnami/postgresql:latest
 ```
 
-```sh
+```sql
 psql -U postgres
 \x auto
+
 select * from pg_stat_user_tables;
+CREATE TABLE auth_user (
+  id serial PRIMARY KEY NOT NULL,
+	username VARCHAR(50) UNIQUE NOT NULL,
+	password VARCHAR(50) NOT NULL,
+  phone VARCHAR (50),
+	created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
 ```
