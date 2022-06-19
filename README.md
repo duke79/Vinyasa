@@ -31,4 +31,7 @@ CREATE TABLE auth_user (
 select * from pg_stat_user_tables;
 
 \dt
+
+INSERT INTO auth_user (username, password, phone) VALUES ('pulkit', 'empty', '82325435234');
+SELECT * from auth_user;
 ```
