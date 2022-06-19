@@ -14,3 +14,8 @@ Development environment configurator
 ```sh
 docker run -d -v /Users/pulkitsingh/dev/auth-dummy:/bitnami/postgresql -e POSTGRESQL_PASSWORD=admin -p 5432:5432 bitnami/postgresql:latest
 ```
+
+```sh
+psql -U postgres
+select * from pg_stat_user_tables;
+```
