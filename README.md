@@ -17,5 +17,6 @@ docker run -d -v /Users/pulkitsingh/dev/auth-dummy:/bitnami/postgresql -e POSTGR
 
 ```sh
 psql -U postgres
+\x auto
 select * from pg_stat_user_tables;
 ```
