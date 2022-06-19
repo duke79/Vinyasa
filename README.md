@@ -19,7 +19,6 @@ docker run -d -v /Users/pulkitsingh/dev/auth-dummy:/bitnami/postgresql -e POSTGR
 psql -U postgres
 \x auto
 
-select * from pg_stat_user_tables;
 CREATE TABLE auth_user (
   id serial PRIMARY KEY NOT NULL,
 	username VARCHAR(50) UNIQUE NOT NULL,
@@ -28,4 +27,8 @@ CREATE TABLE auth_user (
 	created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
+
+select * from pg_stat_user_tables;
+
+\dt
 ```
