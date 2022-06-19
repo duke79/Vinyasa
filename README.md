@@ -35,3 +35,23 @@ select * from pg_stat_user_tables;
 INSERT INTO auth_user (username, password, phone) VALUES ('pulkit', 'empty', '82325435234');
 SELECT * from auth_user;
 ```
+
+## Typeorm
+* [ ] Installation
+```sh
+npm install typeorm
+npm install reflect-metadata 
+# and import it somewhere in the global place of your app (for example in app.ts):
+# import "reflect-metadata"
+npm install @types/node
+npm install pg
+```
+
+* [ ] `tsconfig.json`
+```json
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    ...
+```
