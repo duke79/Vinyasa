@@ -55,3 +55,57 @@ npm install pg
     "experimentalDecorators": true,
     ...
 ```
+
+## Alfred
+https://pypi.org/project/Alfred-PyWorkflow/
+```
+query=$1
+cat <<EOF | /opt/homebrew/bin/python3
+from workflow import Workflow
+
+def main(wf):
+    # Get the query from Alfred
+    query = wf.args[0]
+
+    # Retrieve the stored duration
+    stored_duration = wf.stored_data('selected_duration')
+
+    # Define an array of time duration suggestions
+    durations = ["5 mins", "10 mins", "20 mins", "30 mins", "40 mins", "1 hour", "2 hours", "3 hours", "4 hours"]
+
+    # Initialize a list to store the workflow items
+    items = []
+
+    # Loop through the durations and create workflow items
+    for duration in durations:
+        # Check if the current duration matches the stored duration
+        if duration == stored_duration:
+            subtitle = "Selected"
+        else:
+            subtitle = "Set a timer for {}".format(duration)
+
+        # Add the item to the list
+        items.append({
+            "title": duration,
+            "subtitle": subtitle,
+            "arg": duration,
+            "valid": True,
+            "icon": "icon.png"  # Replace with your icon path
+        })
+
+    # Send the items to Alfred
+    wf.add_items(items)
+
+    # Handle the case where an option is selected
+    if query:
+        wf.store_data('selected_duration', query)
+
+    # Send the results to Alfred
+    wf.send_feedback()
+
+if __name__ == "__main__":
+    wf = Workflow()
+    wf.run(main)
+
+EOF
+```
